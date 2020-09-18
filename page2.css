@@ -1,0 +1,137 @@
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 ;
+    padding: 0;
+    background-color: rgb(195, 248, 1);
+    overflow: hidden;
+    
+   
+}
+*{box-sizing: border-box}
+.header{
+    position: fixed;;
+    left: 0;
+    right: 0;
+    height: 66px;
+    line-height: 15px;
+    background-color: rgb(42, 199, 199);
+    
+}
+.menu{
+   
+    
+}
+.bar-navigation{
+   display: inline;
+   padding: 0 10px;
+
+}
+
+
+
+
+
+@media  (max-width:750px){
+
+
+    .header{
+        width: 100%;
+       position: static;
+        background-color: blueviolet;
+        margin-top: -10px;
+       
+       
+    }
+
+
+    .header__icon{
+      
+        width: 55px;
+        height: 70px;
+        cursor: pointer;
+        left: -30px;
+        background-color: aliceblue;
+        
+      
+    }
+    
+    .buu{
+        width: 1.5rem;
+        height: 3.5px;
+        background-color: rgb(0, 0, 0);
+        margin: 10px;
+        top: 10px;
+        position:relative;
+       
+       
+       
+    }
+     .pusher{
+         height: 150vh;
+         transition-duration:1s;
+         transform: translatex(0px)    ;
+         -webkit-transform: translatex(0px)    ;
+         -moz-transform: translatex(0px)    ;
+         -ms-transform: translatex(0px)    ;
+         -o-transform: translatex(0px)    ;
+ }
+   .has-sidebar .pusher{
+      
+    transform: translateX(250);
+    -webkit-transform: translateX(250px);
+    -moz-transform: translateX(250);
+    -ms-transform: translateX(250);
+    -o-transform: translateX(250);
+} 
+.bar-navigation{
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #ffffff;
+}
+
+    
+ 
+       .menu{
+       position: absolute;;
+        left: 0;
+        top: 0px;
+        width:250px;
+        bottom: 0;
+        background-color: rgb(58, 226, 43);
+        transform: translateX(-250px );
+        transition:transform 0.5s;
+        -webkit-transform: translateX(-250px );
+        -moz-transform: translateX(-250px );
+        -ms-transform: translateX(-250px );
+        -o-transform: translateX(-250px );
+        -webkit-transition:transform 0.5s;
+        -moz-transition:transform 0.5s;
+        -ms-transition:transform 0.5s;
+        -o-transition:transform 0.5s;
+       }
+    .content{
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow-y: scroll;
+        background: #ffffff;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -4;
+    }
+    
+    .cell{
+        height: 100vh;
+        margin: 10px;
+        background: white;
+        position: relative;
+        top: 50px;
+    }
+ }
